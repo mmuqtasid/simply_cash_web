@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2a2828;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #2a2828;
+}
+
+.icon {
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+img{
+  width: 100%;
+  height: 60px;
+}
+.PrimaryNav{
+  width: 100%;
+  height: 30px;
+  background-color:dodgerblue;
+}
+
+.divStyle{height: '110px';
+    width: '100%';
+    overflow-y: 'auto';
+    border: '1px solid #ccc'; 
+    background-color: #2a2828;
+}

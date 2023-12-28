@@ -1,0 +1,129 @@
+.left-div {
+    width: 60%;
+    height: 350px;
+    background-color: #f6f2f2;
+    float: left;
+}
+.calculator {
+    width: 100%;
+    
+    background-color: #f6f2f2;
+    float: left;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.calculator button {
+    width: 30%;
+    padding: 10px;
+    margin: 4px;
+    background-color:#fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 3px -1px #0000004d;
+    
+
+}
+
+.right-div {
+    width: 40%;
+    background-color: #f6f2f2;
+    float: left;
+    height: 350px;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button1{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: #D3D3D3;
+    color:#a5a2a2;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#gary{
+    background-color: #a5a2a2 !important;
+}
+
+
+.cancel-button {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+}
+.blue{
+    background-color: #477bff;
+    color: #fff;
+}
+#cancel-button{
+    background-color: red;
+    color: #fff;
+}
+.user-icon::before {
+    content: "";
+}
+.user-icon{
+
+}
+
+.notes-icon::before {
+    content: "";
+}
+
+.gift-icon::before {
+    content: "";
+}
+.black{
+    width: 100%;
+    font-size: 38px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    height: 36px;
+}
+
+.small-div {
+    float: left;
+    font-size: 11px;
+    width: 100%;
+    text-align: left !important;
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 123, 255);
+    /* padding: 5px; */
+    border: white !important;
+    border-style: inset !important;
+    border-width: 1px !important;
+    height: 20px;
+    border: none;
+}
+.primary-nav-editpage{
+    width: 100%;
+    height: 40px;
+    background-color: #1E90FF;
+}
+.blue{
+    padding: 10px !important;
+}
