@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
 import './Header.css';
+import DepModal from '../buttons/DepModal';
 
 export default function Header() {
   const [apodixiContent, setApodixiContent] = useState('Demo Demo Demo');
   const [dynamicDivCounter, setDynamicDivCounter] = useState(0);
+  const addNewDiv = () => {
+    // Add your logic for creating a new div here
+    const newDiv = (
+      <div key={dynamicDivCounter} className="new-dynamic-div">
+        <div className='new-content1'>Dynamic Div #{dynamicDivCounter}</div>
+      </div>
+    );
+    setApodixiContent((prevContent) => (
+      <>
+        {prevContent}
+        {newDiv}
+      </>
+    ));
+
+    // Increment the dynamicDivCounter
+    setDynamicDivCounter((prevCounter) => prevCounter + 1);
+  };
   const handleDXButtonClick = () => {
-    // Replace content with four div elements
     setApodixiContent(
       <>
 
@@ -29,7 +46,8 @@ export default function Header() {
       </div>
       <div className="apodixi">{apodixiContent}</div>
      
-     
+    <DepModal onAddNewDiv={addNewDiv} />
+    
     </>
   );
 }

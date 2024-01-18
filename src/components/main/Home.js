@@ -20,7 +20,7 @@ const Home = () => {
 
   const loginUser = async (e) => {
     e.preventDefault();
-
+ 
     const { email, password } = inpval;
 
     if (email === '' || password === '') {
@@ -64,54 +64,56 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-fluid bg justify-content-center">
-        <section className="justify-content-center ">
-          <div className="left_data  p-3 justify-content-center" style={{ width: '100%' }}>
-            <h3 className="text-center col-lg-12">Login</h3>
-            <Form className="mt-5">
-              <Form.Group className="mb-3 col-lg-12" controlId="formBasicPassword">
-                <Form.Control
-                  type="email"
-                  name="email"
-                  onChange={getdata}
-                  placeholder="Email"
-                  className="styl"
-                />
-                <Form.Control
-                  type="password"
-                  name="password"
-                  onChange={getdata}
-                  placeholder="Password"
-                />
-              </Form.Group>
-              <Button
-                variant="primary"
-                className="col-lg-12"
-                onClick={loginUser}
-                style={{ background: '#4c62de' }}
-                type="submit"
-              >
-                Login
-              </Button>
-              <br />
-              <br />
-              <Button
-                variant="primary"
-                className="col-lg-12"
-                onClick={loginUser}
-                style={{ background: 'dodgerblue' }}
-                type="submit"
-              >
-                Demo Account
-              </Button>
-            </Form>
-            <p className="mt-3">
-              Already Have an Account <span onClick={() => history('/signup')}>SignUp</span>{' '}
-            </p>
-          </div>
-        </section>
-        <ToastContainer />
-      </div>
+   <div className="container-fluid bg d-flex justify-content-center align-items-center vh-100">
+  <section className="left_data p-3" style={{ backgroundColor: '#fff', width: '300px', border: '2px solid dodgerblue' }}>
+    <h3 className="text-center">Login</h3>
+    <div className="col-md-12">
+      <Form className="text-center">
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Control
+            type="email"
+            name="email"
+            onChange={getdata}
+            placeholder="Email"
+            className="styl"
+          />
+          <Form.Control
+            type="password"
+            name="password"
+            onChange={getdata}
+            placeholder="Password"
+          />
+        </Form.Group>
+        <Button
+          variant="primary"
+          className="col-lg-12"
+          onClick={loginUser}
+          style={{ background: '#4c62de' }}
+          type="submit"
+        >
+          Login
+        </Button>
+        <br />
+        <br />
+        <Button
+          variant="primary"
+          className="col-lg-12"
+          onClick={loginUser}
+          style={{ background: 'dodgerblue' }}
+          type="submit"
+        >
+          Demo Account
+        </Button>
+      </Form>
+    </div>
+    <p className="mt-3">
+      Already Have an Account <span onClick={() => history('/signup')}>SignUp</span>{' '}
+    </p>
+  </section>
+  <ToastContainer />
+</div>
+
+
     </>
   );
 };

@@ -6,3 +6,10 @@
     width: 100px;
     height: 110px;
 }
+.nav {
+   background-color:white;
+   color: black;
+}
+.space{
+    margin-top: 10rem;
+}

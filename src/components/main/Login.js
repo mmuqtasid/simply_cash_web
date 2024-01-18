@@ -83,11 +83,11 @@ const Login = () => {
 
     return (
         <>
-            <div className="container-fluid bg justify-content-center">
-                <section className='justify-content-center '>
-                    <div className="left_data  p-3 justify-content-center" style={{ width: "100%" }}>
-                        <h3 className='text-center col-lg-12'>Login</h3>
-                        <Form className='mt-5' >
+            <div className="container-fluid bg d-flex justify-content-center align-items-center vh-100">
+  <section className="left_data p-3" style={{ backgroundColor: '#fff', width: '300px', border: '2px solid dodgerblue' }}>
+    <h3 className="text-center">Login</h3>
+    <div className="col-md-12">
+    <Form className="text-center">
 
                            
 

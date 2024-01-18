@@ -12,7 +12,10 @@ import AddDiv from '../comm/AddDiv';
 export default function Button() {
   const [display, setDisplay] = useState('0');
   const [expression, setExpression] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isUserModalOpen, setIsUserModalOpen] = useState(false);
+  const [isNotesModalOpen, setIsNotesModalOpen] = useState(false);
+  const [isGifModalOpen, setIsGifModalOpen] = useState(false);
+  const [isDepModalOpen, setIsDepModalOpen] = useState(false);
 
   const handleButtonClick = (value) => {
     if (value === 'AC') {
@@ -36,17 +39,33 @@ export default function Button() {
       }
     }
 
-    // Open the modal when the "Add User" button is clicked
+    // Open the corresponding modal when the respective button is clicked
     if (value === 'user') {
-      setIsModalOpen(true);
+      setIsUserModalOpen(true);
+    } else if (value === 'notes') {
+      setIsNotesModalOpen(true);
+    } else if (value === 'gif') {
+      setIsGifModalOpen(true);
+    } else if (value === 'dep') {
+      setIsDepModalOpen(true);
     }
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeUserModal = () => {
+    setIsUserModalOpen(false);
   };
 
-  
+  const closeNotesModal = () => {
+    setIsNotesModalOpen(false);
+  };
+
+  const closeGifModal = () => {
+    setIsGifModalOpen(false);
+  };
+
+  const closeDepModal = () => {
+    setIsDepModalOpen(false);
+  };
   
   
 
@@ -84,13 +103,15 @@ export default function Button() {
         <button className="button user-icon" onClick={() => handleButtonClick('user')}>
             <FaUser className="icon" />
           </button>
+          <UserModal isOpen={isUserModalOpen} onRequestClose={closeUserModal} />
 
-          <UserModal isOpen={isModalOpen} onRequestClose={closeModal} />
             <button className="button notes-icon" onClick={() => (window.alert("Add Notes"))}>Notes</button>
             <button className="button gift-icon" onClick={() => (window.alert("Create Gif"))}><FaGift className='icon' /></button>
             <button className="button cancel-button " ><Ac/></button>
             {/* Department Modal  */}
-            <button className="button blue" onClick={() => handleButtonClick('user')}>DX <DepModal isOpen={isModalOpen} onRequestClose={closeModal} /></button>
+            <button className="button blue" onClick={() => handleButtonClick('dep')}>
+            DX <DepModal isOpen={isDepModalOpen} onRequestClose={closeDepModal} />
+          </button>
             <button className="button blue">Cat Label1</button>
             <button className="button blue">Cat Label</button>
             <button className="button blue">Nothing</button>

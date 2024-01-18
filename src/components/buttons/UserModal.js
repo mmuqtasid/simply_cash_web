@@ -159,8 +159,8 @@ const UserModal = ({ isOpen, onRequestClose }) => {
 
     <div className='row'> 
     <div className='col-md-12 col-lg-12 mt-5'>     
-     <button className='btn btn-danger col-md-4 col-lg-4 ' onClick={onRequestClose}>Cleaning</button>
-      <button className='btn btn-success col-md-4 col-lg-4 ' onClick={onRequestClose}>Selection</button>
+     <button className='btn btn-danger col-md-1 col-lg-1 ' onClick={onRequestClose}>Close</button>
+      <button className='btn btn-success col-md-1 col-lg-1 ' onClick={onRequestClose}>Save</button>
       </div>
       </div>
 
