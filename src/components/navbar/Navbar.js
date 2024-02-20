@@ -2,9 +2,17 @@ import React from "react";
 import { FaCalculator ,FaList  , FaCog} from "react-icons/fa";
 import "./Navbar.css"; // Create a CSS file for styling.
 import { Link } from 'react-router-dom';
+import Profile from './Profile';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
+  
+  const user = {
+    username: 'John Doe',
+    profilePicture: './profile.jpg',
+  };
+
+
   return (
     <div className="navbar">
       <div className="nav-item">
@@ -27,9 +35,13 @@ function Navbar() {
         </Link>
       </div>
       <div className="nav-item">
+      <Link to="/ChatGPT" className="nav-item">
         <img src="./ChatGPT-Emblem.png" alt="ChatGPT Emblem" />
+        </Link>
       </div>
-      
+      <div className="nav-item">
+      <Profile username={user.username} profilePicture={user.profilePicture} />
+    </div>
     </div>
     
   

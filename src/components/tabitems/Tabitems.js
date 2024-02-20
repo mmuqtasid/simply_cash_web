@@ -21,9 +21,9 @@ function Tabitems({ onRequestClose, onAddNewDiv }) {
       <div className="new-content" onClick={() => onAddNewDiv()}>
           <p>Div Button123</p>
         </div>
-        <div className="new-content1">Cat Label</div>
-        <div className="new-content">Nothing</div>
-        <div className="new-content1">P24</div>
+        <div className="new-content1" onClick={() => onAddNewDiv()}>Cat Label</div>
+        <div className="new-content" onClick={() => onAddNewDiv()}>Nothing</div>
+        <div className="new-content1" onClick={() => onAddNewDiv()}>P24</div>
           <div className="new-content" onClick={() => (alert("Sure to Cancel-2"))}><p>Cat Label2</p></div>
         <div className="new-content1">Cat Label</div>
         <div className="new-content">Nothing</div>

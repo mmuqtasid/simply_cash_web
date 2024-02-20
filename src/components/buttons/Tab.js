@@ -6,7 +6,7 @@ import TabitemsDrinks from '../tabitems/TabitemsDrinks';
 import TabitemsIce from '../tabitems/TabitemsIce';
 import TabitemsGro from '../tabitems/TabitemsGro';
 import TabitemsMisc from '../tabitems/TabitemsMisc';
-import './tab.css';
+
 
 const Tab = ({}) => {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -77,7 +77,9 @@ const Tab = ({}) => {
       <div className="tab-content mt-3">
         <div className={`tab-pane fade ${activeTab === 'tab1' ? 'show active' : ''}`}>
         
-          <Tabitems /> 
+          <Tabitems onAddNewDiv={() => {
+            alert("Abcd ")
+          }}/> 
         </div>
         <div className={`tab-pane fade ${activeTab === 'tab2' ? 'show active' : ''}`}>
        

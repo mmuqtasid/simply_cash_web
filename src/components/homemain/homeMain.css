@@ -1,0 +1,54 @@
+.custom-container{
+    background-color:#f5f4ece1;
+    width: 100%;
+    height: 39.45rem;
+    background-size: cover;
+
+}
+.header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+.icon_menu{
+    display: block;
+    margin: 0 auto;
+    width:50px;
+    height: 50px;
+  
+}
+
+.custom-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust height as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #0d6efd;
+    margin: 10px; /* Add margin for spacing */
+}
+
+.firstrow {
+    width: 200px;
+    font-weight: bold; 
+    cursor: pointer;
+   
+}
+.switchUser{
+    font-weight: 600;
+    color:#635f5fc0
+}
+.homeicon{
+    color:#0d6efd;
+   width:100%;
+   height: 50px;
+}

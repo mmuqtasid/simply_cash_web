@@ -1,0 +1,88 @@
+.custom-settings-div {
+  box-sizing: border-box;
+  width: 400px;
+  height: 75px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.left-side {
+  width: 12%;
+}
+
+.right-side {
+  width: 88%;
+}
+
+.right-side .title {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: blue;
+  cursor: pointer;
+}
+
+.right-side .description {
+  color: grey;
+  font-size: small;
+}
+
+.header {
+  padding: 10px;
+  margin: 10px;
+}
+.header .description {
+  color: grey;
+  font-size: small;
+}
+.custom-settings-div-red {
+  box-sizing: border-box;
+  width: 400px;
+  height: 75px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.title-red {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.split {
+  display: flex;
+}
+.split .left {
+  width: 30%;
+  min-width: 30%;
+}
+
+.split .right {
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 70%;
+  min-width: 70%;
+  border: 2px solid blue; /* Add a 1px solid border with a light gray color */
+  padding: 10px; /* Add padding for a bit of separation */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: #eae5e5;
+}
+.general {
+  margin: 20px;
+}
+
+.Sleft {
+  margin: 10px;
+  width: 50%;
+}
+.Sright {
+  width: 50%;
+  margin: 10px;
+}

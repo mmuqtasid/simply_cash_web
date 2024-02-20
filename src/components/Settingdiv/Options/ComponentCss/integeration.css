@@ -1,0 +1,12 @@
+.general {
+  margin: 20px;
+}
+
+.Sleft {
+  margin: 10px;
+  width: 50%;
+}
+.Sright {
+  width: 50%;
+  margin: 10px;
+}

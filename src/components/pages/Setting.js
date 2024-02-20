@@ -1,24 +1,26 @@
-import React from "react";
+// Setting.js
+import React, { useState } from "react";
+import "./Setting.css";
+import SettingOption from "../Settingdiv/SettingOption";
+import ChangePage from "../Settingdiv/ChangePage";
 
 function Setting() {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
+
   return (
     <>
-       <div class="container-fluid">
-        <div class="Gen"> <p>Generel Setting</p></div>
-        <div class="">Company Details</div>
-        <div class="">Product Management</div>
-        <div class="">Invoice Setting</div>
-        <div class="">Others Setting</div>
-        <div class="">Payment Gateway</div>
-        <div class="">Search Fiscal Details</div>
-        <div class="">Voice Setting</div>
-        <div class="">Bluetooth Printers</div>
-        <div class="">Reports</div>
-        <div class="">myData-IARP</div>
-        <div class="">Invoices</div>
-        <div class="">System</div>
-      
-       </div>
+      <div className="split">
+        <div className="left">
+          <SettingOption onOptionClick={handleOptionClick} />
+        </div>
+        <div className="right">
+          <ChangePage selectedOption={selectedOption} />
+        </div>
+      </div>
     </>
   );
 }

@@ -74,7 +74,8 @@ const Login = () => {
 
                     localStorage.setItem("user_login", JSON.stringify(userlogin))
 
-                    history("/Cashier")
+                    history("/HomeMain")
+                    // history("/Cashier")
                 }
             }
         }

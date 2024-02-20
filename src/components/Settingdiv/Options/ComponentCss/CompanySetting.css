@@ -1,0 +1,19 @@
+.general {
+  margin: 20px;
+}
+.title {
+  margin: 0.2em;
+}
+.Sleft {
+  margin: 10px;
+  width: 50%;
+}
+.Sright {
+  width: 50%;
+  margin: 10px;
+}
+.branch {
+  margin: 20px;
+  width: 50%;
+  margin-right: 10px;
+}

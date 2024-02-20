@@ -1,0 +1,9 @@
+.general {
+  display: flex;
+}
+.Sleft {
+  width: 45%;
+}
+.Sright {
+  width: 40%;
+}
